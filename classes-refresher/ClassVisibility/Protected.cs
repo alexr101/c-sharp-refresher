@@ -9,18 +9,26 @@ namespace classesrefresher
         protected class Protected 
         {
             private string name;
-            public string Name { get; set; }
+            public string Name 
+            { 
+                get { return name; } 
+                set { name = value; } 
+            }
         }
 
         Protected protectedClass = new Protected();
 
     }
 
-    public class Outer2 : Outer
+    public class Outer2:Outer
     {
         Outer.Protected protectedClass = new Outer.Protected();
-        protectedClass.name = "protected class";
-        Console.log(protectedClass.name);
+
+        public Outer2()
+        {
+		    protectedClass.Name = "protected class";
+			Console.WriteLine(protectedClass.Name);  
+        }
     }
 
     public class Outer3

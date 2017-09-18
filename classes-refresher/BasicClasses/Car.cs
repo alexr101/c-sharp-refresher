@@ -27,7 +27,7 @@ namespace classesrefresher
         }
 
         // Destructor
-        -Car() {
+        ~Car() {
             Console.WriteLine("I've just been garbage collected :(");
         }
     }

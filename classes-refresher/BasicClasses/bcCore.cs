@@ -1,5 +1,5 @@
 ﻿using System;
-namespace classesrefresher
+namespace classesrefresher.BasicClasses
 {
     public class bcCore
     {

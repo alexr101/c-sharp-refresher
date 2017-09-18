@@ -11,6 +11,6 @@ namespace classesrefresher
         public Internal()
         {
             Console.WriteLine("Accessible only within program. I'm good for buiding modular code."); 
-        };
+        }
     }
 }

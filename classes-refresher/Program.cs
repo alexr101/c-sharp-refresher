@@ -10,7 +10,7 @@ namespace classesrefresher
     {
         public static void Main(string[] args)
         {
-            bcCore BasicClasses = new BasicClasses();
+            bcCore BasicClasses = new bcCore();
             cmCore classMembers = new cmCore();
             mCore methods = new mCore();
             cvCore classVisibility = new cvCore();
