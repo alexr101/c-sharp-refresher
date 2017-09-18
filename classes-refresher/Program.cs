@@ -1,5 +1,8 @@
 ﻿using System;
 using classesrefresher.ClassVisibility;
+using classesrefresher.ClassMembers;
+using classesrefresher.Methods;
+using classesrefresher.BasicClasses;
 
 namespace classesrefresher
 {
@@ -7,21 +10,9 @@ namespace classesrefresher
     {
         public static void Main(string[] args)
         {
-            Car car = new Car("Red");
-            Car car2 = new Car("Blue");
-
-            string color = car.Describe();
-            Console.WriteLine(color);
-
-            Overloading overloader = new Overloading();
-            overloader.Plus(1, 2);
-            overloader.Plus(2, 4, 5);
-
-            StaticVsInstanceMethods staticTest = new StaticVsInstanceMethods();
-
-            StaticVsInstanceMethods.StaticMethod();
-            staticTest.InstanceMethod();
-
+            bcCore BasicClasses = new BasicClasses();
+            cmCore classMembers = new cmCore();
+            mCore methods = new mCore();
             cvCore classVisibility = new cvCore();
         }
     }
