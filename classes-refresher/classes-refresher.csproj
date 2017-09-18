@@ -44,7 +44,7 @@
     <Compile Include="ClassVisibility\Internal.cs" />
     <Compile Include="ClassVisibility\ProtectedInternal.cs" />
     <Compile Include="ClassVisibility\Private.cs" />
-    <Compile Include="ClassVisibility\Core.cs" />
+    <Compile Include="ClassVisibility\cvCore.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ClassVisibility\" />

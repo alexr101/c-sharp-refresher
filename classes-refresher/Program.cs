@@ -1,4 +1,5 @@
 ﻿using System;
+using classesrefresher.ClassVisibility;
 
 namespace classesrefresher
 {
@@ -21,6 +22,7 @@ namespace classesrefresher
             StaticVsInstanceMethods.StaticMethod();
             staticTest.InstanceMethod();
 
+            cvCore classVisibility = new cvCore();
         }
     }
 }

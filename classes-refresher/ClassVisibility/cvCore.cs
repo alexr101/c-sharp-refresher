@@ -2,9 +2,9 @@
 
 namespace classesrefresher.ClassVisibility
 {
-    public class Core : Outer
+    public class cvCore : Outer
     {
-        public Core()
+        public cvCore()
         {
             Public publicClass = new Public();
             publicClass.Write();
@@ -12,6 +12,11 @@ namespace classesrefresher.ClassVisibility
             // accessible only because we are inheriting from Protected class'
             // wrapper Outer class
             Outer.Protected protectedClass = new Outer.Protected();
+
+            Internal internalClass = new Internal(); // see log and class file
+
+            PIOuter.ProtectedInternal pi = new PIOuter.ProtectedInternal();
+
         }
     }
 }
