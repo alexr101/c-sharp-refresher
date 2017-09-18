@@ -6,5 +6,10 @@ namespace classesrefresher
         public Public()
         {
         }
+
+        public void Write()
+        {
+            Console.WriteLine("Called Public Class Method");
+        }
     }
 }
